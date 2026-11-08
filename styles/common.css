@@ -1,17 +1,6 @@
 body{
-	margin-block-end: 3rem;
-
 	main{
-		article{
-			font-size: 1.4rem;
-			line-height: 1.8rem;
-			margin:1.2rem;
-		}
-
-		details{
-			margin-inline:1.2rem;
-			margin-block:1.5rem;
-		}
+		line-height: 1.4rem;
 	}
 
 	footer{
