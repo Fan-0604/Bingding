@@ -44,16 +44,25 @@ body{
 			font-family: var(--display-font);
 			font-size: var(--h3-size);
 			font-weight: 500;
-			display: flex;
 			width: 100%;
 			position: sticky;
 			top:0;
 			z-index: 100;
 
-			.direction-1,.direction-2,.direction-3{
+			ol {
+				display: flex;
+			}
+
+
+			.home,.direction-1,.direction-2,.direction-3{
 				padding-block:var(--block-space);
 				flex:1;
 				text-align: center;
+			}
+
+			.home{
+				background-color: var(--em-red);
+				color: var(--bg-color);
 			}
 
 			.direction-1{
