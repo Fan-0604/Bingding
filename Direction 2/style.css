@@ -2,12 +2,12 @@
 	/* color */
 	--bg-color:#d3e2e3;
 	--text-color:#292923;
-	--red:#A95F40;
+	--red:#bc5e46;
 	--green:#536B57;
 
 	/* nav color */
-	--article-1: #bccfd1;
-    --article-2: #aec3c5;
+	--article-1: #aec3c5;
+	--article-2: #d3e2e3;
     --article-3: #a1b8ba;
 
 	/* size */
@@ -32,6 +32,7 @@ body{
 	color:var(--text-color);
 
 	nav{
+		background-color: var(--article-1);
 		font-family: var(--display-font);
 		font-size: var(--h3-size);
 		font-weight: 500;
@@ -48,17 +49,18 @@ body{
 			}
 
 		.direction-1{
-			background-color: var(--bg-color);
+			background-color: var(--article-1);
 			color: var(--text-color);
 			}
 
 		.direction-2{
-			background-color: var(--bg-color);
+			background-color: var(--article-2);
 			color: var(--text-color);
+			border-radius: 1rem 1rem 0 0;
 			}
 
 		.direction-3{
-			background-color: var(--bg-color);
+			background-color: var(--article-3);
 			color: var(--text-color);
 			}
 		}
@@ -109,7 +111,7 @@ body{
 		em{
 			font-weight: 700;
 			text-transform: uppercase;
-			color: var(--em-red);
+			color: var(--red);
 		}
 
 		article{
@@ -181,14 +183,14 @@ body{
 
 		#top{
 			display: block;
-			text-align: center;
 			font-family: var(--display-font);
 			font-size: calc(var(--h1-size)/1.8);
 			font-weight: bolder;
 			text-transform: uppercase;
 			color: var(--text-color);
-			padding-inline:var(--inline-space);
+			margin-inline:var(--inline-space);
 			padding-block:calc(var(--block-space)*1.6);
+			border-block-start:0.2rem dashed var(--text-color);
 		}
 	}
 
