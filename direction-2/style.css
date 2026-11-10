@@ -134,12 +134,11 @@ body{
 		article{
 			blockquote{
 				font-size:calc(var(--quote-size)/1.2);
-				font-style: italic;
-				border-block:1rem solid var(--em-red);
+				border :0.2rem dashed var(--text-color);
 				color: var(--text-color);
 				padding-inline: var(--inline-space);
 				padding-block: calc(var(--inline-space)*2);
-				margin-inline:0;
+				margin-block: calc(var(--block-space)*2);
 			}
 
 			section{
