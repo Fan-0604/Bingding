@@ -146,6 +146,11 @@ body{
 				padding-inline:var(--inline-space);
 				padding-block:var(--block-space);
 				line-height: 1.7rem;
+
+				a{
+					color: var(--em-red);
+					text-decoration: underline;
+				}
 			}
 
 		}
