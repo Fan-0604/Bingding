@@ -11,7 +11,6 @@ body{
 		margin-block-start: 1.5rem;
 
 		section{
-			display: flex;
 			margin-inline:1.31rem;
 
 			h1{
@@ -24,23 +23,43 @@ body{
 			}
 
 			&:nth-child(1){
+				display: flex;
 				justify-content: start;
 			}
 
 			&:nth-child(2){
+				display: flex;
 				justify-content: end;
 			}
 
 			&:nth-child(3){
-				justify-content: end;
-				margin-inline:1.46rem;
-				margin-block:1.5rem;
+				section{
+					display: flex;
 
+					&:nth-child(1){
+						flex-direction: column;
+						justify-content: end;
+						margin-inline:1.46rem;
+						margin-block-start:1.5rem;
+						width: fit-content;
+						margin-inline-start:auto;
+						margin-inline-end: 0.1rem;
 
+						h1{
+							margin-block:-0.1rem;
+						}
+					}
 
-				h1{
-					margin-inline:-0.1rem;
+					&:nth-child(2){
+						justify-content: end;
+						margin-inline-end: 0.2rem;
+
+						h1{
+							margin-inline:-0.1rem;
+						}
+					}
 				}
+
 			}
 
 			.black{
