@@ -7,7 +7,7 @@
 	--em-blue:#2457A6;
 
 	/* size */
-	--h1-size:4rem;
+	--h1-size:4.1rem;
 	--h2-size:1.3rem;
 	--h3-size:1.1rem;
 	--quote-size:2rem;
@@ -37,6 +37,7 @@ body{
 		padding-inline:var(--inline-space);
 		position:sticky;
 		top:2.85rem;
+		box-shadow: 0.5rem 0.5rem 0 var(--text-color);
 	}
 
 
@@ -61,7 +62,7 @@ body{
 			}
 
 			.home{
-				background-color: var(--em-red);
+				background-color: var(--text-color);
 				color: var(--bg-color);
 			}
 
@@ -84,19 +85,22 @@ body{
 	header{
 		font-family: var(--display-font);
 
+
 		h1{
 			font-size: var(--h1-size);
 			font-weight: bolder;
 			text-transform: uppercase;
-			background-color: var(--text-color);
+			background-color: var(--em-red);
 			color: var(--bg-color);
 			padding-inline:var(--inline-space);
+			padding-block: calc(var(--block-space)/1.5);
+
 		}
 
 		h2{
 			font-size: var(--h2-size);
-			color: var(--text-color);
-			border:0.2rem solid var(--text-color);
+			color: var(--bg-color);
+			background-color: var(--text-color);
 			padding-block:var(--block-space);
 			padding-inline:var(--inline-space);
 			margin-block-end:var(--block-space);
@@ -145,7 +149,7 @@ body{
 				font-family: var(--text-font);
 				padding-inline:var(--inline-space);
 				padding-block:var(--block-space);
-				line-height: 1.7rem;
+				line-height: 1.9rem;
 
 				a{
 					color: var(--em-red);
@@ -156,6 +160,11 @@ body{
 		}
 
 		details{
+			summary{
+				position:sticky;
+				top:2.6rem;
+			}
+
 			h3{
 				margin-block-start:calc(var(--block-space)*3);
 				z-index: 2;
@@ -164,7 +173,7 @@ body{
 			ul{
 				text-decoration: underline;
 				font-family: var(--text-font);
-				margin-block:var(--block-space);
+				margin-block:calc(var(--block-space)*2);
 			}
 
 			li{
@@ -175,12 +184,13 @@ body{
 	}
 
 	footer{
-		margin-block-start: calc(var(--block-space)*3);
+		margin-block-start: calc(var(--block-space)*4);
 
 		section{
 			font-size: var(--h2-size);
 			font-family: var(--display-font);
-			color: var(--text-color);
+			color: var(--bg-color);
+			background-color: var(--text-color);
 			border:0.2rem solid var(--text-color);
 			padding-block:var(--block-space);
 
@@ -194,19 +204,16 @@ body{
 
 		#top{
 			display: block;
-			text-align: center;
 			font-family: var(--display-font);
-			font-size: calc(var(--h1-size)/1.8);
+			font-size: calc(var(--h1-size)/1.25);
 			font-weight: bolder;
 			text-transform: uppercase;
-			background-color: var(--text-color);
+			background-color: var(--em-red);
 			color: var(--bg-color);
 			padding-inline:var(--inline-space);
 			padding-block:calc(var(--block-space)*1.6);
 		}
 	}
-
-
-
 }
+
 
