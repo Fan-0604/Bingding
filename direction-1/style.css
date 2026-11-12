@@ -215,13 +215,3 @@ body{
 		}
 	}
 }
-
-
-/* I want to testing the darkmode version */
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme */
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/invert */
-@media (prefers-color-scheme: dark) {
-  html {
-    filter: invert(1);
-  }
-}
