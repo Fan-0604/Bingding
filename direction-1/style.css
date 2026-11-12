@@ -10,7 +10,6 @@
 	--h1-size:4.2rem;
 	--h2-size:1.3rem;
 	--h3-size:1.1rem;
-	--quote-size:2rem;
 	--text-size:1.1rem;
 
 
@@ -18,9 +17,6 @@
 	--text-font:'Noto Sans', sans-serif;
 	--display-font:'IBM Plex Mono', monospace;
 
-	/* space */
-	--block-space:0.7rem;
-	--inline-space:calc(var(--block-space)*2);
 }
 
 body{
@@ -49,11 +45,6 @@ body{
 			position: sticky;
 			top:0;
 			z-index: 100;
-
-			ol {
-				display: flex;
-			}
-
 
 			.home,.direction-1,.direction-2,.direction-3{
 				padding-block:var(--block-space);
