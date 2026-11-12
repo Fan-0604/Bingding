@@ -8,7 +8,7 @@
 
 	/* size */
 	--h1-size:4.5rem;
-	--h2-size:1.3rem;
+	--h2-size:1.8rem;
 	--h3-size:1.1rem;
 	--quote-size:2rem;
 	--text-size:1.1rem;
@@ -100,15 +100,21 @@ body{
 			text-transform: uppercase;
 			color: var(--text-color);
 			padding-block: calc(var(--block-space)*2);
-			border-block-end:0.2rem dashed var(--text-color);
+			border-block:0.2rem dashed var(--text-color);
 			margin-inline:1rem;
 		}
 
 		h2{
 			font-size: var(--h2-size);
 			color: var(--text-color);
-			padding-block:var(--block-space);
+			padding-block-start:calc(var(--block-space)*1.5);
 			padding-inline:var(--inline-space);
+		}
+
+		.year{
+			font-size: calc(var(--h2-size)*1.5);
+			padding-block-start: calc(var(--block-space)*2);
+			padding-block-end:calc(var(--block-space)*1.5);
 		}
 	}
 
@@ -121,7 +127,7 @@ body{
 			font-size:var(--quote-size);
 			font-weight: 700;
 			line-height: 2.5rem;
-			padding-block:calc(var(--block-space)*3);
+			padding-block:calc(var(--block-space)*4);
 			margin-inline:var(--inline-space);
 		}
 
@@ -220,5 +226,14 @@ body{
 	}
 
 
+}
+
+/* I want to testing the darkmode version */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/invert */
+@media (prefers-color-scheme: dark) {
+  html {
+    filter: invert(1);
+  }
 }
 
