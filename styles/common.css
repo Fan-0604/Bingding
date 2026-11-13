@@ -1,27 +1,150 @@
 :root{
+	/* font */
+	--text-font:'Source Sans 3', sans-serif;
+	--display-font:'Syne', sans-serif;
+
+	/* color */
+	--bg-color:#d7dfe6;
+	--text-color:#171717;
+	--link:#276ba6;
+	--light-grey:rgb(232, 236, 240);
+	--grey:rgb(164, 167, 179);
+	--dark-grey:rgb(73, 75, 77);
+
+	/* size */
+	--h1-size:4rem;
+	--h2-size:1.2rem;
+	--h3-size:1.1rem;
+	--text-size:1.2rem;
+	--quote-size:2rem;
+
 	/* space */
 	--block-space:0.7rem;
 	--inline-space:calc(var(--block-space)*2);
-
-	/* size */
-	--quote-size:2rem;
 }
 
-
-
 body{
+	background-color: var(--bg-color);
+	color:var(--text-color);
+}
 
-	nav{
-		ol {
-				display: flex;
+blockquote{
+		font-family: var(--display-font);
+		font-size:var(--quote-size);
+		font-weight: 700;
+		line-height: 2.5rem;
+		margin-block:calc(var(--block-space)*3);
+		margin-inline:var(--inline-space);
+		width: fit-content;
+
+		&:nth-child(1){
+			background-color: var(--grey);
+			box-shadow: inset 0 0 0.3rem var(--text-color);
+			padding: var(--inline-space);
+			margin-inline: 0;
+		}
+	}
+
+em{
+		font-weight: 600;
+		text-transform: uppercase;
+		padding-inline: 0.4rem;
+		white-space: nowrap;
+		background-color: var(--light-grey);
+		color:var(--text-color);
+		box-shadow: inset 0 0 0.2rem var(--dark-grey);
+	}
+
+
+nav{
+	background-color: var(--bg-color);
+	font-family: var(--display-font);
+	font-size: var(--h3-size);
+	font-weight: 500;
+	width: 100%;
+	position: sticky;
+	top:0;
+	z-index: 100;
+
+	ol {
+			display: flex;
+		}
+
+	.home,.direction-1,.direction-2,.direction-3{
+		padding-block:calc(var(--block-space)*2);
+		flex:1;
+		text-align: center;
+		background-color: var(--light-grey);
+		color: var(--text-color);
+		box-shadow: inset 0 0 0.2rem var(--dark-grey);
+		}
+	}
+
+header{
+	font-family: var(--display-font);
+
+	section{
+		h1{
+				font-size: var(--h1-size);
+				text-transform: uppercase;
+				color: var(--text-color);
+				padding-block: calc(var(--block-space)*2);
+				padding-inline: calc(var(--block-space)*2.1);
+				background-color: var(--light-grey);
+				box-shadow: inset 0 0 0.3rem var(--dark-grey);
+				width: fit-content;
+			}
+
+			h2{
+				font-size: var(--h2-size);
+				color: var(--text-color);
+				padding-block:var(--block-space);
+				padding-inline:var(--inline-space);
+				background-color: var(--grey);
+				box-shadow: inset 0 0 0.2rem var(--text-color);
+			}
+
+			h3{
+				background-color: var(--grey);
+				box-shadow: inset 0 0 0.2rem var(--text-color);
 			}
 	}
 
-	main{
-		line-height: 1.4rem;
-	}
-
 }
+
+main{
+	line-height: 1.4rem;
+
+
+	details{
+			margin-block-end:calc(var(--block-space)*3);
+
+			summary{
+				position:sticky;
+				top:4.1rem;
+			}
+
+			h3{
+				margin-block-start:calc(var(--block-space)*3);
+				z-index: 2;
+			}
+
+			ul{
+				text-decoration: underline;
+				margin-block:calc(var(--block-space)*2);
+			}
+
+			li{
+				font-family: var(--text-font);
+				font-size: var(--text-size);
+				line-height: 2rem;
+				padding-inline:var(--inline-space);
+				padding-block-end:calc(var(--block-space)/1.8);
+			}
+		}
+}
+
+
 
 /* I want to testing the darkmode version */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme */
