@@ -1,3 +1,7 @@
+:root{
+	--special-font:'Borel', cursive;
+}
+
 h3{
 	font-family: var(--display-font);
 	font-size: var(--h3-size);
@@ -116,8 +120,9 @@ footer{
 
 	}
 
-	#top{
-		display: block;
+	a{
+		display: flex;
+		flex-direction: row;
 		font-weight: 600;
 		font-family: var(--display-font);
 		font-size: calc(var(--h1-size)/1.8);
@@ -127,6 +132,22 @@ footer{
 		padding-block:calc(var(--block-space)*1.6);
 		background-color: var(--light-grey);
 		box-shadow: inset 0 0 0.2rem var(--dark-grey);
+	}
+
+
+
+}
+
+strong{
+	font-family: var(--special-font);
+	font-weight: 100;
+
+	&.first{
+		display:block;
+	}
+
+	&.italic{
+		font-style: italic;
 	}
 }
 
