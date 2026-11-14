@@ -26,8 +26,14 @@ header{
 		&:nth-child(2){
 			display:flex;
 			flex-direction: column;
-			align-items: flex-end;
 
+			.left{
+				align-self: flex-start;
+			}
+
+			.right{
+				align-self: flex-end;
+			}
 
 			section{
 				display:flex;
@@ -138,17 +144,14 @@ footer{
 
 }
 
-strong{
-	font-family: var(--special-font);
-	font-weight: 100;
-
-	&.first{
+.special{
 		display:block;
+		font-family: var(--special-font);
 	}
 
-	&.italic{
-		font-style: italic;
-	}
+.italic{
+	font-style: italic;
+	font-family: var(--special-font);
 }
 
 

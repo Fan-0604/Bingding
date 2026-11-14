@@ -29,31 +29,35 @@ body{
 }
 
 blockquote{
-		font-family: var(--display-font);
-		font-size:var(--quote-size);
-		font-weight: 700;
-		line-height: 2.5rem;
-		margin-block:calc(var(--block-space)*3);
-		margin-inline:var(--inline-space);
-		width: fit-content;
+	font-family: var(--display-font);
+	font-size:var(--quote-size);
+	font-weight: 700;
+	line-height: 2.5rem;
+	margin-block:calc(var(--block-space)*3);
+	margin-inline:var(--inline-space);
+	width: fit-content;
 
-		&:nth-child(1){
-			background-color: var(--grey);
-			box-shadow: inset 0 0 0.3rem var(--text-color);
-			padding: var(--inline-space);
-			margin-inline: 0;
-		}
+	&:nth-child(1){
+		background-color: var(--grey);
+		box-shadow: inset 0 0 0.3rem var(--text-color);
+		padding: var(--inline-space);
+		margin-inline: 0;
 	}
+}
 
 em{
-		font-weight: 600;
-		text-transform: uppercase;
-		padding-inline: 0.4rem;
-		white-space: nowrap;
-		background-color: var(--light-grey);
-		color:var(--text-color);
-		box-shadow: inset 0 0 0.2rem var(--dark-grey);
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-inline: 0.4rem;
+	white-space: nowrap;
+	background-color: var(--light-grey);
+	color:var(--text-color);
+	box-shadow: inset 0 0 0.2rem var(--dark-grey);
 	}
+
+strong{
+	font-weight: 700;
+}
 
 
 nav{
@@ -89,7 +93,7 @@ header{
 				text-transform: uppercase;
 				color: var(--text-color);
 				padding-block: calc(var(--block-space)*2);
-				padding-inline: calc(var(--block-space)*2.1);
+				padding-inline: calc(var(--block-space)*2.4);
 				background-color: var(--light-grey);
 				box-shadow: inset 0 0 0.3rem var(--dark-grey);
 				width: fit-content;
